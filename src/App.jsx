@@ -1,14 +1,15 @@
 import { useState } from 'react'
-import './App.css'
+import Stock from '../stock.json'
+import Boutique from './components/boutique'
 
 
-function App() {
+export default function App() {
+  const [stock,setStock] = useState(Stock)
+  console.log(stock);
   
   return (
     <>
-
+      <Boutique Stock={stock}/>
     </>
   )
 }
-
-export default App
