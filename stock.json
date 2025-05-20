@@ -1,52 +1,51 @@
 [
-    {
-      "nom": "Pizza Margherita",
-      "prix": 8.99,
-      "stock": 50,
-      "image": "https://example.com/images/pizza_margherita.jpg",
-      "description": "Pizza traditionnelle avec sauce tomate, mozzarella et basilic frais."
-    },
-    {
-      "nom": "Bière Artisanale",
-      "prix": 3.49,
-      "stock": 200,
-      "image": "https://example.com/images/bierre_artisanale.jpg",
-      "description": "Bière locale fabriquée à la main, brassée avec des ingrédients naturels."
-    },
-    {
-      "nom": "Jus d'Orange Frais",
-      "prix": 2.99,
-      "stock": 150,
-      "image": "https://example.com/images/jus_orange.jpg",
-      "description": "Jus d'orange 100% pur, sans sucre ajouté, pressé à froid."
-    },
-    {
-      "nom": "Burger Classique",
-      "prix": 12.50,
-      "stock": 100,
-      "image": "https://example.com/images/burger_classique.jpg",
-      "description": "Burger avec un steak de bœuf, fromage cheddar, salade et sauce maison."
-    },
-    {
-      "nom": "Salade César",
-      "prix": 7.99,
-      "stock": 60,
-      "image": "https://example.com/images/salade_cesar.jpg",
-      "description": "Salade croquante avec poulet grillé, croutons, parmesan et sauce César."
-    },
-    {
-      "nom": "Coca-Cola 33cl",
-      "prix": 1.49,
-      "stock": 300,
-      "image": "https://example.com/images/coca_cola.jpg",
-      "description": "Boisson gazeuse sucrée, disponible en canette de 33cl."
-    },
-    {
-      "nom": "Eau Minérale",
-      "prix": 0.99,
-      "stock": 500,
-      "image": "https://example.com/images/eau_minérale.jpg",
-      "description": "Eau pure et rafraîchissante, disponible en bouteille de 50cl."
-    }
+  {
+    "nom": "Pizza Margherita",
+    "prix": 8.99,
+    "stock": 50,
+    "image": "https://images.unsplash.com/photo-1601924579407-3ccde5d2b8df",
+    "description": "Pizza traditionnelle avec sauce tomate, mozzarella et basilic frais."
+  },
+  {
+    "nom": "Bière Artisanale",
+    "prix": 3.49,
+    "stock": 200,
+    "image": "https://images.unsplash.com/photo-1605276374104-de9b9d6d2a29",
+    "description": "Bière locale fabriquée à la main, brassée avec des ingrédients naturels."
+  },
+  {
+    "nom": "Jus d'Orange Frais",
+    "prix": 2.99,
+    "stock": 150,
+    "image": "https://images.unsplash.com/photo-1584270354949-1d1d335d11af",
+    "description": "Jus d'orange 100% pur, sans sucre ajouté, pressé à froid."
+  },
+  {
+    "nom": "Burger Classique",
+    "prix": 12.50,
+    "stock": 100,
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349",
+    "description": "Burger avec un steak de bœuf, fromage cheddar, salade et sauce maison."
+  },
+  {
+    "nom": "Salade César",
+    "prix": 7.99,
+    "stock": 60,
+    "image": "https://images.unsplash.com/photo-1625949635135-56b83e0f1f8c",
+    "description": "Salade croquante avec poulet grillé, croutons, parmesan et sauce César."
+  },
+  {
+    "nom": "Coca-Cola 33cl",
+    "prix": 1.49,
+    "stock": 300,
+    "image": "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f",
+    "description": "Boisson gazeuse sucrée, disponible en canette de 33cl."
+  },
+  {
+    "nom": "Eau Minérale",
+    "prix": 0.99,
+    "stock": 500,
+    "image": "https://images.unsplash.com/photo-1603048297119-98c07cbe7461",
+    "description": "Eau pure et rafraîchissante, disponible en bouteille de 50cl."
+  }
 ]
-

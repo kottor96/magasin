@@ -5,8 +5,19 @@ import Boutique from './components/boutique'
 
 export default function App() {
   const [stock,setStock] = useState(Stock)
-  console.log(stock);
-  
+  const [panier,setPanier] = useState([])
+  function Ajouter(props) {
+    const trouver = stock.find(el => el.nom === props)
+    stock.map(uni=>{
+      
+    }
+    )
+    console.log(...stock);
+    
+    
+    // trouver ? 
+  }
+  Ajouter('Pizza Margherita')
   return (
     <>
       <Boutique Stock={stock}/>
