@@ -1,10 +1,13 @@
 
-export default function Panier({Stock}) {
+export default function Panier({el}) {
+    console.log(el);
+    
     return(
         <div>
-            <h5>{Stock.nom}</h5>
-            <p>prix : {Stock.prix} - Quantiter {Stock.quantiter}</p>
-            <p></p>
+            <h5>{el.nom}</h5>
+            <p>prix : {el.prix} - Quantiter {el.quantite}</p>
+            <p>prix total = {el.prix*el.quantite}</p>
+            <a className="btn btn-warning">Suprimer</a>
         </div>
     )
 }

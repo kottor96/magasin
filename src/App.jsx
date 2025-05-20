@@ -7,20 +7,32 @@ export default function App() {
   const [stock,setStock] = useState(Stock)
   const [panier,setPanier] = useState([])
   function Ajouter(props) {
-    const trouver = stock.find(el => el.nom === props)
-    stock.map(uni=>{
-      
-    }
+    const trouver = panier.find(el => el.nom === props.nom)
+    
+    
+    setStock(
+            
+      stock.map(el =>
+        el.nom === props.nom && el.stock > 0
+        ? { ...el, stock: el.stock - 1 }
+        : el
+      )
     )
-    console.log(...stock);
-    
-    
-    // trouver ? 
+
+    trouver
+      ? setPanier(
+          panier.map(el =>
+            el.nom === props.nom
+              ? { ...el, quantite: el.quantite + 1 }
+              : el
+          )
+        )
+      : setPanier([...panier, { ...props, quantite: 1 }])
   }
-  Ajouter('Pizza Margherita')
+  
   return (
     <>
-      <Boutique Stock={stock}/>
+      <Boutique Stock={stock} Ajouter={Ajouter} Panier={panier}/>
     </>
   )
 }
