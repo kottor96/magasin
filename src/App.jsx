@@ -6,9 +6,11 @@ import Boutique from './components/boutique'
 export default function App() {
   const [stock,setStock] = useState(Stock)
   const [panier,setPanier] = useState([])
-  const [mondal,setMondal] = useState (true)
+  const [mondal,setMondal] = useState (false)
 
-  
+  function AfficherMasq(params) {
+    setMondal(!mondal)
+  }  
   function Suprimer(props) {
     const newPanier = panier.map(el=> 
       el.nom === props.nom && el.quantite > 1
@@ -53,7 +55,7 @@ export default function App() {
   
   return (
     <>
-      <Boutique Stock={stock} Ajouter={Ajouter} Suprimer={Suprimer} Panier={panier}/>
+      <Boutique Stock={stock} Ajouter={Ajouter} Suprimer={Suprimer} Panier={panier} AfficherMasq={AfficherMasq} mondal={mondal}/>
     </>
   )
 }

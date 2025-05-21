@@ -1,11 +1,66 @@
+body {
+  margin: 0;
+}
+
+#root {
+  background-color: rgb(226, 226, 226);
+}
+
 main {
   padding: 5rem;
 }
 
+#mondalPanier {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(5px);
+  z-index: 5;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #mondalPanier > div {
+  height: 50%;
+  width: 50%;
+  overflow-y: scroll;
+  background-color: #FFF8DC;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+}
+#mondalPanier > div > div {
+  border: 2px solid #fae077;
+  height: 2rem;
+}
+
+.cardPanier {
+  border: 1px #fae077 solid;
+}
+
+.red {
+  background-color: red !important;
+}
+
+.orange {
+  background-color: orange !important;
+}
+
+#btnPanier {
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
+}
+#btnPanier button {
+  background-color: #8A2BE2;
+  color: white;
+  border: 5px #9932CC solid;
+  border-radius: 10px;
+}
+#btnPanier button:hover {
+  background-color: #9932CC;
 }
 
 #stock {
