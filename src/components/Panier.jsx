@@ -1,6 +1,5 @@
 
 export default function Panier({el,Suprimer}) {
-    console.log(Suprimer);
     
     return(
         <div>
