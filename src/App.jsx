@@ -6,6 +6,25 @@ import Boutique from './components/boutique'
 export default function App() {
   const [stock,setStock] = useState(Stock)
   const [panier,setPanier] = useState([])
+
+  function Suprimer(props) {
+    const newPanier = panier.map(el=> 
+      el.nom === props.nom && el.quantite > 1
+        ?{...el,quantite: el.quantite-1}
+        : el.nom === props.nom && el.quantite <= 1
+          ? null
+          : el
+    ).filter(el=>el != null)
+    setPanier(newPanier)
+
+    setStock(
+      stock.map(el =>
+        el.nom === props.nom
+          ? { ...el, stock: el.stock + 1 }
+          : el
+      )
+    )
+  }
   function Ajouter(props) {
     const trouver = panier.find(el => el.nom === props.nom)
     
@@ -32,7 +51,7 @@ export default function App() {
   
   return (
     <>
-      <Boutique Stock={stock} Ajouter={Ajouter} Panier={panier}/>
+      <Boutique Stock={stock} Ajouter={Ajouter} Suprimer={Suprimer} Panier={panier}/>
     </>
   )
 }

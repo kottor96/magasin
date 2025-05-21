@@ -2,7 +2,6 @@ import Stock from "./article";
 import Panier from "./panier";
 
 export default function Boutique(props) {
-    console.log(props.Panier.quantite);
     
     return(
         <>
@@ -15,7 +14,7 @@ export default function Boutique(props) {
                 <div>
                     {props.Panier.length > 0 ? (
                         props.Panier.map(el => (
-                        <Panier el={el} key={el.nom} />
+                        <Panier el={el} key={el.nom} Suprimer={props.Suprimer}/>
                         ))
                     ) : (
                         <p>Le panier est vide.</p>
