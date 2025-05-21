@@ -6,7 +6,9 @@ import Boutique from './components/boutique'
 export default function App() {
   const [stock,setStock] = useState(Stock)
   const [panier,setPanier] = useState([])
+  const [mondal,setMondal] = useState (true)
 
+  
   function Suprimer(props) {
     const newPanier = panier.map(el=> 
       el.nom === props.nom && el.quantite > 1

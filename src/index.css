@@ -1,0 +1,20 @@
+main {
+  padding: 5rem;
+}
+
+#mondalPanier > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+#stock {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+#stock img {
+  height: 10rem;
+}
+
+/*# sourceMappingURL=index.css.map */
