@@ -11,7 +11,7 @@ export default function Boutique(props) {
                     <Stock Stock = {element} key={element.nom} Ajouter={props.Ajouter}/>
                 )}
             </section>
-            <section id="panier">
+            <section id="mondalPanier">
                 <div>
                     {props.Panier.length > 0 ? (
                         props.Panier.map(el => (

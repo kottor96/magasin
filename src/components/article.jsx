@@ -16,7 +16,7 @@ export default function Stock({Stock,Ajouter}){
                 }
                 
             </div>
-            </div>
+        </div>
 
     )
 }
