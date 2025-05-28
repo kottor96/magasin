@@ -8,7 +8,7 @@ export default function App() {
   const [panier,setPanier] = useState([])
   const [mondal,setMondal] = useState (false)
 
-  function AfficherMasq(params) {
+  function AfficherMasq() {
     setMondal(!mondal)
   }  
   function Suprimer(props) {
